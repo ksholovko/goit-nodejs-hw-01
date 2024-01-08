@@ -1,13 +1,5 @@
 const contacts = require("./contacts");
 
-async function get() {
-    const array = await contacts.removeContact("ar3v_vb7UBrAClzC2DCCs");
-
-console.log(array);
-}
-
-get();
-
 const argv = require('yargs').argv;
 
 async function invokeAction({ action, id, name, email, phone }) {
